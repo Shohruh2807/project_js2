@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+</head>
+<body>
+<h1>Inline type</h1>
+<h1>savatchada manfiy bo'lgani uchun if qo'shdim☺</h1>
+<h1>F12  bosib consolga kirish esdan chiqmasin☺</h1>
+<script>
+    //5a
+    let name='Shohruh'
+    //5b
+    console.log(`Mening ismim: ${name}`)
+    //5c
+    let xarajat=5+6+9
+    //5d
+    console.log(`Oziq-ovqat narxi: $${xarajat}`)
+    //5e
+    let tax=xarajat*0.1
+    //5f
+    console.log(`Soliq (10%): $${tax}`)
+    //5g
+    let totalCost=xarajat+tax
+    console.log(`Jami xarajat: $${totalCost}`)
+</script>
+<!--5h,5i,5j,5k-->
+<button
+        onclick=
+                "alert(` Savatdagi maxsulot soni : ${jamiQiymat}`)"
+>
+    Jami Qiymat korsatish
+</button>
+<button
+        onclick=
+                "jamiQiymat ++
+                    alert(`Savatga qoshilgan maxsulot soni:${jamiQiymat}`)"
+
+>
+    Savatchaga qoshish
+</button>
+<button
+        onclick=
+                "jamiQiymat += 2
+                    alert(`Savatga qoshilgan maxsulot soni:${jamiQiymat}`)"
+>
+    +2
+</button>
+<button
+        onclick=
+                "jamiQiymat += 3
+                    alert(`Savatga qoshilgan maxsulot soni:${jamiQiymat}`)"
+>
+    +3
+</button>
+<button
+        onclick=
+                "jamiQiymat += 4
+                    alert(`Savatga qoshilgan maxsulot soni:${jamiQiymat}`)"
+>
+    +4
+</button>
+<button
+        onclick=
+                "jamiQiymat += 5
+                    alert(`Savatga qoshilgan maxsulot soni:${jamiQiymat}`)"
+>
+    +5
+</button>
+<button
+
+        onclick="
+                if(jamiQiymat==0){
+                    alert(`Savatcha bo'sh, boshqa ayirib bo'lmaydi!`)
+                }
+                else{
+                jamiQiymat--
+                    alert(`Savatga olib tashlangan maxsulot soni:${jamiQiymat}`)}"
+
+>
+    Savatchadan olib tashlash
+</button>
+<button
+
+        onclick="
+                if(jamiQiymat==1){
+                    alert(`Savatchada ${jamiQiymat} ta qolgan, ${jamiQiymat} ta ayirsa bo'ladi!`)
+                }
+                else if(jamiQiymat==0){
+                    alert(`Savatcha bo'sh, boshqa ayirib bo'lmaydi`)
+                }
+                else{
+                jamiQiymat-=2
+                    alert(`Savatga olib tashlangan maxsulot soni:${jamiQiymat}`)}"
+
+>
+    -2
+</button>
+<button
+
+        onclick="
+                if(jamiQiymat==2){
+                    alert(`Savatchada ${jamiQiymat} ta qolgan, ${jamiQiymat} ta ayirsa bo'ladi!`)
+                }
+                else if(jamiQiymat==1){
+                    alert(`Savatchada ${jamiQiymat} ta qolgan, ${jamiQiymat} ta ayirsa bo'ladi!`)
+                }
+                else if(jamiQiymat==0){
+                    alert(`Savatcha bo'sh, boshqa ayirib bo'lmaydi`)
+                }
+                else{
+                jamiQiymat-=3
+                    alert(`Savatga olib tashlangan maxsulot soni:${jamiQiymat}`)}"
+
+>
+    -3
+</button>
+<button
+        onclick=
+                "jamiQiymat = 0
+                    alert(`Savatdagi maxsulotlar soni:${jamiQiymat}`)
+                    alert(`Savatchada maxsulotlar qo'shilmagan`)
+                    "
+>Savatchani boshatish</button>
+<script>
+    let jamiQiymat = 0;
+</script>
+</body>
+</html>
